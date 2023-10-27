@@ -1,0 +1,156 @@
+:root{
+  --primary-background-color:rgba(20,10,18,1);
+  --primary-text-color:rgba(245, 245, 245, 0.907);
+  
+  --secondary-background-color:rgba(119, 104, 104, 0.199);
+  --secondary-text-color:rgba(97, 26, 163, 0.794);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  font-family: 'Oswald', sans-serif;
+  background-color: var(--primary-background-color);
+  color: var(--primary-text-color);
+  box-sizing: border-box;
+}
+
+.btn-social{
+  text-decoration: none;
+  text-transform: capitalize;
+  color:inherit;
+  font-size: 1.5rem;
+  margin-top:3rem;
+  padding: 0.75rem 2rem;
+  border: 0.5rem solid var(--secondary-text-color);
+  border-radius: 0 1.5rem;
+}
+
+header p{
+  font-size: 1.4rem;
+}
+
+header,
+section {
+  height: 100vh;
+  overflow-y: auto;
+}
+
+section:nth-child(2n) {
+  background-color:var(--secondary-background-color) ;
+  color:var(--primary-text-color);
+}
+
+section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  padding: 1rem;
+  border:rgb(137, 22, 22) solid 0.1rem;
+}
+
+.flex-justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.flex-align-items-center {
+  align-items: center;
+}
+
+.hero {
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.4rem;
+  background-image: linear-gradient(to right bottom,var(--secondary-background-color),var(
+    --primary-background-color)
+  ),
+  url("assets/HeaderImage.png");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.about-content article {
+  flex-direction: column;
+}
+
+
+section.crafts article {
+  gap: 24px;
+  margin-top: 24px;
+}
+
+section.crafts{
+  display: flex;
+  justify-content: center;
+}
+
+section.crafts h3{
+  margin-top: auto;
+}
+
+
+section.crafts img {
+  height: 200px;
+}
+
+.experience{
+  display: flex;
+  justify-content: center;
+}
+.experience-card li{
+  font-size: 1.2rem;
+  margin-bottom: 5rem;
+}
+
+.experience-card h3{
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.contact ul {
+  padding: 0;
+}
+
+.contact ul > li {
+  display: inline-block;
+  margin-right:1.5rem ;
+}
+
+a{
+  text-decoration: none;
+  color: var(--secondary-text-color);
+}
+
+a:hover{
+  color: var(--primary-text-color);
+}
+
+.article-container article{
+  display: inline-block;
+  padding:5rem;
+}
+
+.contact{
+  display: flex;
+  justify-content: center;
+}
+
+.section-title{
+  font-size: 3rem;
+}
